@@ -1,3 +1,3 @@
 README
 
-Repo for simple C template for raspberrypi pico
+Gather readings over i2c for an mpu6050 gyro/accelerometer and a 

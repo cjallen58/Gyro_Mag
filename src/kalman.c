@@ -1,3 +1,7 @@
+#include <stdio.h>
+
+#include "pico/stdlib.h"
+
 #include "../libs/kalman.h"
 
 // Kalman filter initialization

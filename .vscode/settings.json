@@ -26,6 +26,11 @@
   "files.associations": {
     "stdlib.h": "c",
     "stdio.h": "c",
-    "math.h": "c"
+    "math.h": "c",
+    "cmath": "c",
+    "compare": "c",
+    "limits": "c",
+    "*.tcc": "c",
+    "type_traits": "c"
   }
 }
