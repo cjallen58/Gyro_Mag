@@ -5,10 +5,15 @@
  */
 
 #include <stdio.h>
+#include <time.h>
+#include <math.h>
 
-#include "globals.h"
+#include "../libs/globals.h"
+#include "../libs/kalman.h"
+#include "../libs/i2c_config.h"
+
 #include "pico/stdlib.h"
-
+#include "hardware/i2c.h"
 
 int main() {
 
