@@ -12,4 +12,13 @@
 #define STATUS_REG 0X09
 #define ID_REG 0X0a
 
+// Magnetometer register configuratons
+#define CRA_CONFIG 0b01010000
+#define CRB_CONFIG 0b10000000
+#define MODE_CONFIG 0b00000001
+
+// Magnetometer resoution
+#define MAG_RES 2.27
+
+
 #endif
