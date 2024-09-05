@@ -20,5 +20,9 @@
 // Magnetometer resoution
 #define MAG_RES 2.27
 
+// Function definitions
+static void mag_config(); 
+
+static void mag_read(int16_t mag[3]);
 
 #endif

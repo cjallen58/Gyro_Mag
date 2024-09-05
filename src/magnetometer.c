@@ -31,3 +31,18 @@ static void mag_config() {
 
 }
 
+static void mag_read(int16_t mag[3]) {
+    
+    uint8_t buf[6];
+    uint8_t reg = MAG_READINGS;
+
+    //read magnetometer values
+    i2c_write_blocking(I2C_PORT, MAG_REG, &reg, 1, true);
+    i2c_read_blocking(I2C_PORT, MAG_REG, buf, 6, false);
+
+    //condense 6 bytes into 3 signed integers
+    for (int i = 0; i < 3; i++) {
+        mag[i] = (buf[i * 2] << 8 | buf[(i * 2) + 1]);
+    }
+
+}
