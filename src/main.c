@@ -18,6 +18,7 @@
 #include "../libs/kalman.h"
 #include "../libs/i2c_config.h"
 #include "../libs/mpu6050.h"
+#include "../libs/magnetometer.h"
 
 
 int main() {
